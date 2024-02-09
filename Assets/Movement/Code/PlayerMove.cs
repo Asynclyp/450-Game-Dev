@@ -18,9 +18,9 @@ public class PlayerMove : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
-            if (this.gameObject.transform.position.x > Boundary.rightSide)
+            if (this.gameObject.transform.position.x < Boundary.rightSide)
             {
-                transform.Translate(Vector3.left* Time.deltaTime * leftRightSpeed);
+                transform.Translate(Vector3.left* Time.deltaTime * leftRightSpeed*-1);
             }
         }
     }
