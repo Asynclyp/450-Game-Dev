@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -617,6 +617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Concrete_Barrier_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2892010070900747541, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.22
@@ -668,6 +672,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 175130992}
+    - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 175130994}
   m_SourcePrefab: {fileID: 100100000, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
 --- !u!4 &175130990 stripped
 Transform:
@@ -728,6 +735,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3089045685818018810, guid: 7ef194b4b381fd846a5d1edbc4ab5e2f, type: 3}
+--- !u!114 &175130994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175130991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53f0de6c387a4e6aa2e009b9a0dd09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &177030316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,6 +1196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Concrete_Barrier_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2892010070900747541, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.22
@@ -1228,6 +1251,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 391303574}
+    - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 391303579}
   m_SourcePrefab: {fileID: 100100000, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
 --- !u!4 &391303572 stripped
 Transform:
@@ -1288,6 +1314,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3089045685818018810, guid: 7ef194b4b381fd846a5d1edbc4ab5e2f, type: 3}
+--- !u!114 &391303579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391303573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53f0de6c387a4e6aa2e009b9a0dd09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &430336649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1911,6 +1949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Concrete_Barrier_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2892010070900747541, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1
@@ -1962,6 +2004,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 878720788}
+    - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 878720793}
   m_SourcePrefab: {fileID: 100100000, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
 --- !u!4 &878720786 stripped
 Transform:
@@ -2022,6 +2067,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3089045685818018810, guid: 7ef194b4b381fd846a5d1edbc4ab5e2f, type: 3}
+--- !u!114 &878720793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878720787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53f0de6c387a4e6aa2e009b9a0dd09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &895879023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2124,6 +2181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Concrete_Barrier_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2892010070900747541, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.95
@@ -2175,6 +2236,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 916861412}
+    - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 916861414}
   m_SourcePrefab: {fileID: 100100000, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
 --- !u!4 &916861410 stripped
 Transform:
@@ -2235,6 +2299,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3089045685818018810, guid: 7ef194b4b381fd846a5d1edbc4ab5e2f, type: 3}
+--- !u!114 &916861414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916861411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53f0de6c387a4e6aa2e009b9a0dd09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &928349552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2670,6 +2746,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2892010070900747541, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
   m_PrefabInstance: {fileID: 1397270954}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1092473964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092473953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53f0de6c387a4e6aa2e009b9a0dd09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1107617320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2871,6 +2959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Concrete_Barrier_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2892010070900747541, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.87
@@ -2922,6 +3014,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1174556214}
+    - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1174556216}
   m_SourcePrefab: {fileID: 100100000, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
 --- !u!4 &1174556212 stripped
 Transform:
@@ -2982,6 +3077,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3089045685818018810, guid: 7ef194b4b381fd846a5d1edbc4ab5e2f, type: 3}
+--- !u!114 &1174556216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174556213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53f0de6c387a4e6aa2e009b9a0dd09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1214115082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3109,6 +3216,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Concrete_Barrier_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2892010070900747541, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.9358702
@@ -3160,6 +3271,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1241202594}
+    - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1241202596}
   m_SourcePrefab: {fileID: 100100000, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
 --- !u!4 &1241202592 stripped
 Transform:
@@ -3220,6 +3334,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3089045685818018810, guid: 7ef194b4b381fd846a5d1edbc4ab5e2f, type: 3}
+--- !u!114 &1241202596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241202593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53f0de6c387a4e6aa2e009b9a0dd09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1242697891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3595,6 +3721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Concrete_Barrier_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2892010070900747541, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.3
@@ -3646,6 +3776,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1337376238}
+    - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1337376243}
   m_SourcePrefab: {fileID: 100100000, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
 --- !u!4 &1337376236 stripped
 Transform:
@@ -3706,6 +3839,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3089045685818018810, guid: 7ef194b4b381fd846a5d1edbc4ab5e2f, type: 3}
+--- !u!114 &1337376243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337376237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53f0de6c387a4e6aa2e009b9a0dd09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1341245951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4124,6 +4269,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1092473958}
+    - targetCorrespondingSourceObject: {fileID: 2551759207985870767, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1092473964}
   m_SourcePrefab: {fileID: 100100000, guid: 2a3938a7dc8afd14c8a1c444ed19fab4, type: 3}
 --- !u!1001 &1430168270
 PrefabInstance:
