@@ -9,7 +9,6 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("current x position: " + transform.position.x);
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
 
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
