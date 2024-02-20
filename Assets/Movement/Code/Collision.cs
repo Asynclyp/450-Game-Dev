@@ -19,14 +19,15 @@ public class Collision : MonoBehaviour
 
     void OnCollisionEnter(UnityEngine.Collision collision)
     {
-        Debug.Log("We hit something");
-        Debug.Log(collision.gameObject.name);
-        Debug.Log(collision.gameObject.tag);
+        Debug.Log(this.name + " hits " + collision.gameObject.name);
+        //Debug.Log("We hit something");
+        //Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             Debug.Log("We hit an obstacle");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         
-}
+    }
 }
