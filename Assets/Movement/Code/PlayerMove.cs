@@ -6,9 +6,21 @@ public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed;
     public float leftRightSpeed;
+
+    private float speedIncreaseRate = 2f; // Adjust the rate of speed increase here
+
+    void Start()
+    {
+        moveSpeed = 10;
+        leftRightSpeed = 10;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        moveSpeed += speedIncreaseRate * Time.deltaTime; // Increase moveSpeed over time
+        Debug.Log("Move speed: " + moveSpeed);
+
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
 
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
@@ -25,5 +37,12 @@ public class PlayerMove : MonoBehaviour
                 transform.Translate(Vector3.right * Time.deltaTime * leftRightSpeed);
             }
         }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            transform.Translate(Vector3.up * Time.deltaTime * leftRightSpeed);
+        }
+    
+        
     }
 }
