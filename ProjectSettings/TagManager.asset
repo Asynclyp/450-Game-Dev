@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Coin
+  - Track
   layers:
   - Default
   - TransparentFX

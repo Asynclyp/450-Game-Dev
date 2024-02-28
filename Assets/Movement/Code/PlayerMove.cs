@@ -7,7 +7,7 @@ public class PlayerMove : MonoBehaviour
     public float moveSpeed;
     public float leftRightSpeed;
 
-    private float speedIncreaseRate = 2f; // Adjust the rate of speed increase here
+    private float speedIncreaseRate = 1f; // Adjust the rate of speed increase here
 
     void Start()
     {
