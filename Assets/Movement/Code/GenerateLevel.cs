@@ -29,7 +29,7 @@ public class GenerateLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.position.z > (zPos-500))
+        if (player.position.z > (zPos-300))
         {
             //creatingSection = true;
             GenerateSection();
