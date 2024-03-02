@@ -6,13 +6,15 @@ public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed;
     public float leftRightSpeed;
+    //Animator animator;
 
-    private float speedIncreaseRate = 1f; // Adjust the rate of speed increase here
+    private float speedIncreaseRate = 0.2f; // Adjust the rate of speed increase here
 
     void Start()
     {
         moveSpeed = 10;
         leftRightSpeed = 10;
+        //animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -41,8 +43,16 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             transform.Translate(Vector3.up * Time.deltaTime * leftRightSpeed);
+            //animator.SetBool("Jump", true);
+            //Debug.Log("Jump!");
         }
-    
-        
+
+        //if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Jump") &&
+        //        animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= Time.deltaTime)
+        //{ 
+        //    // Reset the Animator's jump bool
+        //    animator.SetBool("Jump", false);
+        //}
+
     }
 }
