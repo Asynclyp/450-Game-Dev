@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Trap : MonoBehaviour
 {
     public float rotationSpeed = 0.5f;
-
+    public PlayerMove mainScene;
     // Update is called once per frame
     void Update()
     {
@@ -18,7 +18,7 @@ public class Trap : MonoBehaviour
         {
             Debug.Log("We step on a trap");
             CollectableControl.coinCount = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            mainScene.GameOver(CollectableControl.coinCount);
         }
     }
 }

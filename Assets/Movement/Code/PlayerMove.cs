@@ -1,12 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.Events;
 
 public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed;
     public float leftRightSpeed;
     public GameObject playerObject;
+    public GameObject gameOverMenu;
+    public GameObject score;
+    public TMP_Text finalScore;
+
     public bool isJumping;
     public bool comingDown;
     //Animator animator;
@@ -15,6 +23,7 @@ public class PlayerMove : MonoBehaviour
 
     void Start()
     {
+        score.SetActive(true);
         moveSpeed = 10;
         leftRightSpeed = 10;
         isJumping = false;
@@ -88,4 +97,15 @@ public class PlayerMove : MonoBehaviour
         comingDown = false;
         playerObject.GetComponent<Animator>().Play("Standard Run (2)");
     }
+
+    public void GameOver(int currScore)
+    {
+        finalScore.text = currScore.ToString();
+        Debug.Log("gameover called");
+        Time.timeScale = 0;
+        score.SetActive(false);
+        gameOverMenu.SetActive(true);
+
+    }
+
 }

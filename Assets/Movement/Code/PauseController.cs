@@ -25,15 +25,24 @@ public class PauseController : MonoBehaviour
             if (_isPaused)
             {
                 Time.timeScale = 0;
-                GamePaused.Invoke();
+                pause();
             }
             else
             {
                 Time.timeScale = 1;
-                GameResumed.Invoke();
+                resume();
             }
         }
     }
 
+    private void pause()
+    {
+        GamePaused.Invoke();
+    }
+    private void resume()
+    {
+        GameResumed.Invoke();
+    }
 }
+
 
