@@ -24,12 +24,13 @@ public class Collision : MonoBehaviour
 
     void OnCollisionEnter(UnityEngine.Collision collision)
     {
-        Debug.Log(this.name + " hits " + collision.gameObject.name);
+        //Debug.Log(this.name + " hits " + collision.gameObject.name);
         //Debug.Log("We hit something");
         //Debug.Log(collision.gameObject.name);
         //Debug.Log(collision.gameObject.tag);
 
         GameObject collisionObject = collision.gameObject;
+
         if (collisionObject.CompareTag("Obstacle") || collisionObject.CompareTag("Trap"))
         {
             
@@ -39,6 +40,5 @@ public class Collision : MonoBehaviour
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        
     }
 }
