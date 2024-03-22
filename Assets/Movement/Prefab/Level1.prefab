@@ -725,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4020357820655820915, guid: 7b234052884ab454290775b8b103e9f0, type: 3}
       propertyPath: m_Name
-      value: Trap (1)
+      value: Banana_Peel(1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1016,7 +1016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4020357820655820915, guid: 7b234052884ab454290775b8b103e9f0, type: 3}
       propertyPath: m_Name
-      value: Trap
+      value: Banana_Peel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1777,7 +1777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4020357820655820915, guid: 7b234052884ab454290775b8b103e9f0, type: 3}
       propertyPath: m_Name
-      value: Trap (2)
+      value: Banana_Peel(2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
