@@ -35,7 +35,7 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         moveSpeed += speedIncreaseRate * Time.deltaTime; // Increase moveSpeed over time
-        Debug.Log("Move speed: " + moveSpeed);
+        //Debug.Log("Move speed: " + moveSpeed);
 
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
 

@@ -30,7 +30,7 @@ public class Collision : MonoBehaviour
         //Debug.Log(collision.gameObject.tag);
 
         GameObject collisionObject = collision.gameObject;
-        if (collisionObject.CompareTag("Obstacle"))
+        if (collisionObject.CompareTag("Obstacle") || collisionObject.CompareTag("Trap"))
         {
             
             Debug.Log("We hit an obstacle");
@@ -38,6 +38,7 @@ public class Collision : MonoBehaviour
             CollectableControl.coinCount = 0;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
         
     }
 }
