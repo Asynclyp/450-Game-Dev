@@ -5,6 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     public float rotationSpeed = 0.5f;
+    public AudioClip coinSound;
 
     // Update is called once per frame
     void Update()
@@ -18,6 +19,7 @@ public class Coin : MonoBehaviour
         {
             CollectableControl.coinCount += 1; 
             this.gameObject.SetActive(false);
+            AudioSource.PlayClipAtPoint(coinSound, transform.position);
         }
     }
 }
