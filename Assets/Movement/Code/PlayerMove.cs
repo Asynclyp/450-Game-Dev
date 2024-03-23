@@ -15,8 +15,11 @@ public class PlayerMove : MonoBehaviour
     public GameObject score;
     public TMP_Text finalScore;
 
+    //Jump parameters
     public bool isJumping;
     public bool comingDown;
+    public static int jumpPower;
+    public static float jumpDuration;
     //Animator animator;
 
     private float speedIncreaseRate = 0.2f; // Adjust the rate of speed increase here
@@ -28,6 +31,8 @@ public class PlayerMove : MonoBehaviour
         leftRightSpeed = 10;
         isJumping = false;
         comingDown = false;
+        jumpPower = 5;
+        jumpDuration = 0.45f;
         //animator = GetComponent<Animator>();
     }
 
@@ -62,37 +67,26 @@ public class PlayerMove : MonoBehaviour
                 playerObject.GetComponent<Animator>().Play("Jump2");
                 StartCoroutine(JumpSequence());
             }
-            //transform.Translate(Vector3.up * Time.deltaTime * leftRightSpeed);
-            //animator.SetBool("Jump", true);
-            //Debug.Log("Jump!");
         }
 
         if (isJumping)
         {
-            if (!comingDown)
+            if (!comingDown) //Upward movement lasts 0.45sec
             {
-                transform.Translate(Vector3.up * Time.deltaTime * 5, Space.World);
+                transform.Translate(Vector3.up * Time.deltaTime * jumpPower, Space.World);
             }
             else
             {
-                transform.Translate(Vector3.up * Time.deltaTime * -5, Space.World);
+                transform.Translate(Vector3.up * Time.deltaTime * -jumpPower, Space.World);
             }
         }
-
-        //if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Jump") &&
-        //        animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= Time.deltaTime)
-        //{ 
-        //    // Reset the Animator's jump bool
-        //    animator.SetBool("Jump", false);
-        //}
-
     }
 
     IEnumerator JumpSequence()
     {
-        yield return new WaitForSeconds(0.45f);
+        yield return new WaitForSeconds(jumpDuration); //while player is jumping up
         comingDown = true;
-        yield return new WaitForSeconds(0.45f);
+        yield return new WaitForSeconds(jumpDuration);
         isJumping = false;
         comingDown = false;
         playerObject.GetComponent<Animator>().Play("Standard Run (2)");
