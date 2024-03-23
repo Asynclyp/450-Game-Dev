@@ -919,63 +919,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 067a9770b528a4dc6bed06b221f1bc01, type: 3}
---- !u!1001 &284377014
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3659440502530008385, guid: 8cfba30c485f04027a4d5ad0536f95e0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659440502530008385, guid: 8cfba30c485f04027a4d5ad0536f95e0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659440502530008385, guid: 8cfba30c485f04027a4d5ad0536f95e0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -34.175304
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659440502530008385, guid: 8cfba30c485f04027a4d5ad0536f95e0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7885718
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659440502530008385, guid: 8cfba30c485f04027a4d5ad0536f95e0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.5108934
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659440502530008385, guid: 8cfba30c485f04027a4d5ad0536f95e0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.33966446
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659440502530008385, guid: 8cfba30c485f04027a4d5ad0536f95e0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.042078562
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659440502530008385, guid: 8cfba30c485f04027a4d5ad0536f95e0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659440502530008385, guid: 8cfba30c485f04027a4d5ad0536f95e0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659440502530008385, guid: 8cfba30c485f04027a4d5ad0536f95e0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4020357820655820915, guid: 8cfba30c485f04027a4d5ad0536f95e0, type: 3}
-      propertyPath: m_Name
-      value: Subway
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8cfba30c485f04027a4d5ad0536f95e0, type: 3}
 --- !u!1001 &316890093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5846,4 +5789,3 @@ SceneRoots:
   - {fileID: 46220604}
   - {fileID: 1101130743}
   - {fileID: 1088701801}
-  - {fileID: 284377014}
