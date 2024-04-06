@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MainMenu : MonoBehaviour
 {
@@ -9,14 +10,28 @@ public class MainMenu : MonoBehaviour
     public int selectedCharacter;
     public GameObject mainMenu;
     public GameObject characterMenu;
+    public TMP_Text characterName;
+    public string currentCharacter;
 
     private void Start()
     {
         selectedCharacter = 0;
+        currentCharacter = "Jim";
     }
 
     public void NextCharacter()
     {
+        if (currentCharacter.Equals("Jim"))
+        {
+            characterName.text = "Sarah";
+            currentCharacter = "Sarah";
+        }
+        else
+        {
+            characterName.text = "Jim";
+            currentCharacter = "Jim";
+        }
+        
         characters[selectedCharacter].SetActive(false);
         selectedCharacter = (selectedCharacter + 1)% characters.Length;
         characters[selectedCharacter].SetActive(true);
@@ -25,6 +40,17 @@ public class MainMenu : MonoBehaviour
 
     public void PreviousCharacter()
     {
+        if (currentCharacter.Equals("Jim"))
+        {
+            characterName.text = "Sarah";
+            currentCharacter = "Sarah";
+        }
+        else
+        {
+            characterName.text = "Jim";
+            currentCharacter = "Jim";
+        }
+
         characters[selectedCharacter].SetActive(false);
         selectedCharacter--;
         if(selectedCharacter < 0)
