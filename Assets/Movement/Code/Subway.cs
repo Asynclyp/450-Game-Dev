@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Subway : MonoBehaviour
 {
+    public float rotationSpeed = 0.5f;
 
     // Update is called once per frame
     void Update()
     {
+        transform.Rotate(0, rotationSpeed, 0, Space.World);
     }
 
     void OnTriggerEnter(Collider collider)
