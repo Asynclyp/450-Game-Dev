@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class LoadCharacters : MonoBehaviour
 {
-    public GameObject[] characterPrefabs;
+    //public GameObject[] characterPrefabs;
     public Transform spawnPoint;
     public GameObject[] characters;
+    public GameObject[] characterCameras;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class LoadCharacters : MonoBehaviour
         //GameObject prefab = characterPrefabs[selectedCharacter];
         //GameObject clone = Instantiate(prefab, spawnPoint.position, Quaternion.identity);
         characters[selectedCharacter].SetActive(true);
+        characterCameras[selectedCharacter].SetActive(true);
     }
 
     // Update is called once per frame
