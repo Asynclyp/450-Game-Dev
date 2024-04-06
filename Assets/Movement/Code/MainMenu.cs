@@ -6,14 +6,21 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject[] characters;
-    public int selectedCharacter = 0;
+    public int selectedCharacter;
     public GameObject mainMenu;
     public GameObject characterMenu;
+
+    private void Start()
+    {
+        selectedCharacter = 0;
+    }
+
     public void NextCharacter()
     {
         characters[selectedCharacter].SetActive(false);
         selectedCharacter = (selectedCharacter + 1)% characters.Length;
         characters[selectedCharacter].SetActive(true);
+        Debug.Log(selectedCharacter);
     }
 
     public void PreviousCharacter()
@@ -22,14 +29,16 @@ public class MainMenu : MonoBehaviour
         selectedCharacter--;
         if(selectedCharacter < 0)
         {
-            selectedCharacter = characters.Length;
+            selectedCharacter = characters.Length-1;
         }
         characters[selectedCharacter].SetActive(true);
+        Debug.Log(selectedCharacter);
     }
 
     public void PlayGame()
     {
-        PlayerPrefs.SetInt("selectCharacter", 1);
+        Debug.Log("Select " + selectedCharacter);
+        PlayerPrefs.SetInt("selectCharacter", selectedCharacter);
         StartCoroutine(LoadYourAsyncScene());
     }
     public void ShowCharacterMenu()
