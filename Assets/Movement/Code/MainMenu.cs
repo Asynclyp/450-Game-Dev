@@ -5,23 +5,38 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject[] characters;
+    public int selectedCharacter = 0;
+    public GameObject mainMenu;
+    public GameObject characterMenu;
+    public void NextCharacter()
     {
-        
+        characters[selectedCharacter].SetActive(false);
+        selectedCharacter = (selectedCharacter + 1)% characters.Length;
+        characters[selectedCharacter].SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PreviousCharacter()
     {
-        
+        characters[selectedCharacter].SetActive(false);
+        selectedCharacter--;
+        if(selectedCharacter < 0)
+        {
+            selectedCharacter = characters.Length;
+        }
+        characters[selectedCharacter].SetActive(true);
     }
 
     public void PlayGame()
     {
+        PlayerPrefs.SetInt("selectCharacter", 1);
         StartCoroutine(LoadYourAsyncScene());
     }
-
+    public void ShowCharacterMenu()
+    {
+        mainMenu.SetActive(false);
+        characterMenu.SetActive(true);
+    }
     IEnumerator LoadYourAsyncScene()
     {
         // The Application loads the Scene in the background as the current Scene runs.
@@ -37,4 +52,6 @@ public class MainMenu : MonoBehaviour
             yield return null;
         }
     }
+
+
 }
