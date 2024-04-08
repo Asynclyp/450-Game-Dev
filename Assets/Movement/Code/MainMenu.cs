@@ -11,55 +11,65 @@ public class MainMenu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject characterMenu;
     public TMP_Text characterName;
-    public string currentCharacter;
+    public string[] characterNames = { "Jim", "Yoyo", "Sarah", "Peace", "Jane", "Tope" };
+    private string currentCharacter;
 
     private void Start()
     {
         selectedCharacter = 0;
-        currentCharacter = "Jim";
+        currentCharacter = characterNames[selectedCharacter];
+        characterName.text = currentCharacter;
+        Debug.Log("name " + characterName.text);
+        Debug.Log("characters " + characters.Length);
     }
 
-    public void NextCharacter()
-    {
-        if (currentCharacter.Equals("Jim"))
-        {
-            characterName.text = "Sarah";
-            currentCharacter = "Sarah";
-        }
-        else
-        {
-            characterName.text = "Jim";
-            currentCharacter = "Jim";
-        }
-        
+    public void NextCharacter() 
+    { 
+        int currentIndex = System.Array.IndexOf(characterNames, currentCharacter);
+        int nextIndex = (currentIndex + 1) % characterNames.Length;
+        currentCharacter = characterNames[nextIndex];
+        characterName.text = currentCharacter;
+
         characters[selectedCharacter].SetActive(false);
-        selectedCharacter = (selectedCharacter + 1)% characters.Length;
+
+        selectedCharacter = nextIndex;
+
         characters[selectedCharacter].SetActive(true);
-        Debug.Log(selectedCharacter);
+
+        Debug.Log("Selected Character Index: " + selectedCharacter);
     }
 
     public void PreviousCharacter()
     {
-        if (currentCharacter.Equals("Jim"))
-        {
-            characterName.text = "Sarah";
-            currentCharacter = "Sarah";
-        }
-        else
-        {
-            characterName.text = "Jim";
-            currentCharacter = "Jim";
-        }
-
-        characters[selectedCharacter].SetActive(false);
         selectedCharacter--;
-        if(selectedCharacter < 0)
+        if (selectedCharacter < 0)
         {
-            selectedCharacter = characters.Length-1;
+            selectedCharacter = characters.Length;
+            selectedCharacter = characters.Length - 1;
         }
         characters[selectedCharacter].SetActive(true);
         Debug.Log(selectedCharacter);
+
+
+
+        int currentIndex = System.Array.IndexOf(characterNames, currentCharacter);
+        int previousIndex = (currentIndex - 1 + characterNames.Length) % characterNames.Length;
+
+        currentCharacter = characterNames[previousIndex];
+        characterName.text = currentCharacter;
+
+        characters[selectedCharacter].SetActive(false);
+
+        selectedCharacter = previousIndex;
+
+        characters[selectedCharacter].SetActive(true);
+
+        Debug.Log("Selected Character Index: " + selectedCharacter);
+
+
+        selectedCharacter = (selectedCharacter + 1) % characters.Length;
     }
+
 
     public void PlayGame()
     {
