@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject characterMenu;
     public TMP_Text characterName;
-    public string[] characterNames = { "Jim", "Yoyo", "Sarah", "Peace", "Jane", "Tope" };
+    public string[] characterNames = { "Jim", "Yoyo", "Sarah", "Peace", "Jane" };
     private string currentCharacter;
 
     private void Start()
