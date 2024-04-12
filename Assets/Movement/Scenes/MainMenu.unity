@@ -1634,7 +1634,7 @@ PrefabInstance:
     - target: {fileID: 2850384235211801692, guid: 197fb78489e2fc74193aaaa0dff4659b, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 09ad152a57f0191408846ab4f65f85cc, type: 2}
+      objectReference: {fileID: 9100000, guid: 8a52e8153819e2043ace4d2f318d0949, type: 2}
     - target: {fileID: 3736185497984218083, guid: 197fb78489e2fc74193aaaa0dff4659b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -294.8018
@@ -1790,22 +1790,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - {fileID: 238963341}
-  - {fileID: 2119114078}
   - {fileID: 1891485630}
+  - {fileID: 2119114078}
   - {fileID: 1212138397}
   - {fileID: 971737555}
-  - {fileID: 0}
   selectedCharacter: 0
   mainMenu: {fileID: 38061824}
   characterMenu: {fileID: 1682556841}
   characterName: {fileID: 1508636522}
   characterNames:
   - Jim
-  - Sarah
   - Yoyo
+  - Sarah
   - Peace
   - Jane
-  - Tope
 --- !u!1 &1403574523
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,7 +2528,7 @@ PrefabInstance:
     - target: {fileID: 1060153016446109162, guid: 44929fa55a2e55a4ab55e444b178be0f, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 09ad152a57f0191408846ab4f65f85cc, type: 2}
+      objectReference: {fileID: 9100000, guid: 73cc4cd9932847f4aa318ab461892c1f, type: 2}
     - target: {fileID: 1940902766971992765, guid: 44929fa55a2e55a4ab55e444b178be0f, type: 3}
       propertyPath: GamePaused.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2908,7 +2906,7 @@ PrefabInstance:
     - target: {fileID: 538835955860833336, guid: c130c6430b7d7b346afceb81da2519a9, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 09ad152a57f0191408846ab4f65f85cc, type: 2}
+      objectReference: {fileID: 9100000, guid: 53ae538639151244985a5522ea754368, type: 2}
     - target: {fileID: 1585057674101335893, guid: c130c6430b7d7b346afceb81da2519a9, type: 3}
       propertyPath: m_Name
       value: Sarah
