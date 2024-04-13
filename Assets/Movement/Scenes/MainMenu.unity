@@ -488,7 +488,8 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 53ae538639151244985a5522ea754368, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5595287070911455493, guid: 449d7c87e308cc342b6bd651e69bc53a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1514,11 +1515,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jane
       objectReference: {fileID: 0}
+    - target: {fileID: 5532796062663642680, guid: b7a480b8963d51b418cf02d3540bae94, type: 3}
+      propertyPath: GamePaused.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5532796062663642680, guid: b7a480b8963d51b418cf02d3540bae94, type: 3}
+      propertyPath: GameResumed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7133377235268215481, guid: b7a480b8963d51b418cf02d3540bae94, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8667090350007080347, guid: b7a480b8963d51b418cf02d3540bae94, type: 3}
+      propertyPath: mainScene
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7133377235268215481, guid: b7a480b8963d51b418cf02d3540bae94, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1639,6 +1653,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 8a52e8153819e2043ace4d2f318d0949, type: 2}
+    - target: {fileID: 3098049632941832676, guid: 197fb78489e2fc74193aaaa0dff4659b, type: 3}
+      propertyPath: GamePaused.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3098049632941832676, guid: 197fb78489e2fc74193aaaa0dff4659b, type: 3}
+      propertyPath: GameResumed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3736185497984218083, guid: 197fb78489e2fc74193aaaa0dff4659b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -294.8018
@@ -1679,6 +1701,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7047017693285712108, guid: 197fb78489e2fc74193aaaa0dff4659b, type: 3}
+      propertyPath: mainScene
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8473957377365782282, guid: 197fb78489e2fc74193aaaa0dff4659b, type: 3}
       propertyPath: m_Name
       value: Peace
@@ -1687,7 +1713,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9112257404840531538, guid: 197fb78489e2fc74193aaaa0dff4659b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2593,7 +2620,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yoyo
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7195062806383611929, guid: 44929fa55a2e55a4ab55e444b178be0f, type: 3}
+      propertyPath: mainScene
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 763594838128082994, guid: 44929fa55a2e55a4ab55e444b178be0f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2963,7 +2995,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4439080600610169119, guid: c130c6430b7d7b346afceb81da2519a9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
