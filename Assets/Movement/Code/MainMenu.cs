@@ -25,8 +25,7 @@ public class MainMenu : MonoBehaviour
 
     public void NextCharacter() 
     { 
-        int currentIndex = System.Array.IndexOf(characterNames, currentCharacter);
-        int nextIndex = (currentIndex + 1) % characterNames.Length;
+        int nextIndex = (selectedCharacter + 1) % characterNames.Length;
         currentCharacter = characterNames[nextIndex];
         characterName.text = currentCharacter;
 
@@ -41,6 +40,7 @@ public class MainMenu : MonoBehaviour
 
     public void PreviousCharacter()
     {
+        characters[selectedCharacter].SetActive(false);
         selectedCharacter--;
         if (selectedCharacter < 0)
         {
@@ -81,6 +81,7 @@ public class MainMenu : MonoBehaviour
     {
         mainMenu.SetActive(false);
         characterMenu.SetActive(true);
+        characters[selectedCharacter].SetActive(true);
     }
     IEnumerator LoadYourAsyncScene()
     {

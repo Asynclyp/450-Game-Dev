@@ -64,7 +64,7 @@ public class PlayerMove : MonoBehaviour
             if (!isJumping)
             {
                 isJumping = true;
-                playerObject.GetComponent<Animator>().Play("Jump");
+                playerObject.GetComponent<Animator>().Play("Jump2");
                 //_animator.SetBool("Jump", true);
                 StartCoroutine(JumpSequence());
             }
