@@ -33,7 +33,6 @@ public class PlayerMove : MonoBehaviour
         comingDown = false;
         jumpPower = 5;
         jumpDuration = 0.45f;
-        //animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -64,7 +63,8 @@ public class PlayerMove : MonoBehaviour
             if (!isJumping)
             {
                 isJumping = true;
-                playerObject.GetComponent<Animator>().Play("Jump2");
+                playerObject.GetComponent<Animator>().Play("Jump");
+                //_animator.SetBool("Jump", true);
                 StartCoroutine(JumpSequence());
             }
         }
@@ -89,7 +89,8 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(jumpDuration);
         isJumping = false;
         comingDown = false;
-        playerObject.GetComponent<Animator>().Play("Standard Run (2)");
+        playerObject.GetComponent<Animator>().Play("Standard Run");
+        //_animator.SetBool("Jump", false);
     }
 
     public void GameOver(int currScore)
