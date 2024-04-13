@@ -33,6 +33,7 @@ public class PlayerMove : MonoBehaviour
         comingDown = false;
         jumpPower = 5;
         jumpDuration = 0.45f;
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
