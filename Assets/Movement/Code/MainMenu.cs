@@ -28,14 +28,9 @@ public class MainMenu : MonoBehaviour
         int nextIndex = (selectedCharacter + 1) % characterNames.Length;
         currentCharacter = characterNames[nextIndex];
         characterName.text = currentCharacter;
-
         characters[selectedCharacter].SetActive(false);
-
         selectedCharacter = nextIndex;
-
         characters[selectedCharacter].SetActive(true);
-
-        Debug.Log("Selected Character Index: " + selectedCharacter);
     }
 
     public void PreviousCharacter()
@@ -48,26 +43,6 @@ public class MainMenu : MonoBehaviour
             selectedCharacter = characters.Length - 1;
         }
         characters[selectedCharacter].SetActive(true);
-        Debug.Log(selectedCharacter);
-
-
-
-        int currentIndex = System.Array.IndexOf(characterNames, currentCharacter);
-        int previousIndex = (currentIndex - 1 + characterNames.Length) % characterNames.Length;
-
-        currentCharacter = characterNames[previousIndex];
-        characterName.text = currentCharacter;
-
-        characters[selectedCharacter].SetActive(false);
-
-        selectedCharacter = previousIndex;
-
-        characters[selectedCharacter].SetActive(true);
-
-        Debug.Log("Selected Character Index: " + selectedCharacter);
-
-
-        selectedCharacter = (selectedCharacter + 1) % characters.Length;
     }
 
 
