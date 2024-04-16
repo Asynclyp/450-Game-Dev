@@ -34,6 +34,10 @@ public class Collision : MonoBehaviour
         {
             
             Debug.Log("We hit an obstacle");
+            if (CollectableControl.coinCount > CollectableControl.highestScore)
+            {
+                CollectableControl.highestScore = CollectableControl.coinCount;
+            }
             mainScene.GameOver(CollectableControl.coinCount);
             CollectableControl.coinCount = 0;
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
