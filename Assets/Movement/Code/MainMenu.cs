@@ -42,6 +42,7 @@ public class MainMenu : MonoBehaviour
             selectedCharacter = characters.Length;
             selectedCharacter = characters.Length - 1;
         }
+        characterName.text = characterNames[selectedCharacter];
         characters[selectedCharacter].SetActive(true);
     }
 
