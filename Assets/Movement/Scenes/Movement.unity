@@ -6672,6 +6672,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2661660321055379473, guid: 44929fa55a2e55a4ab55e444b178be0f, type: 3}
+      propertyPath: m_Size.y
+      value: 2.677283
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661660321055379473, guid: 44929fa55a2e55a4ab55e444b178be0f, type: 3}
+      propertyPath: m_Center.y
+      value: -4.570723
+      objectReference: {fileID: 0}
     - target: {fileID: 3721962896989483720, guid: 44929fa55a2e55a4ab55e444b178be0f, type: 3}
       propertyPath: m_Name
       value: Yoyo
@@ -7199,6 +7207,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3b83166da06400c4b82e5a33355fc912, type: 2}
+    - target: {fileID: 1285546247987433606, guid: b7a480b8963d51b418cf02d3540bae94, type: 3}
+      propertyPath: m_Size.y
+      value: 2.509252
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285546247987433606, guid: b7a480b8963d51b418cf02d3540bae94, type: 3}
+      propertyPath: m_Center.y
+      value: -4.6547365
+      objectReference: {fileID: 0}
     - target: {fileID: 4088262164204901416, guid: b7a480b8963d51b418cf02d3540bae94, type: 3}
       propertyPath: m_Name
       value: Jane
@@ -7291,27 +7307,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3309065281350129712, guid: c130c6430b7d7b346afceb81da2519a9, type: 3}
       propertyPath: m_Size.x
-      value: 1.6580507
+      value: 1.1331748
       objectReference: {fileID: 0}
     - target: {fileID: 3309065281350129712, guid: c130c6430b7d7b346afceb81da2519a9, type: 3}
       propertyPath: m_Size.y
-      value: 2.6184545
+      value: 2.8446028
       objectReference: {fileID: 0}
     - target: {fileID: 3309065281350129712, guid: c130c6430b7d7b346afceb81da2519a9, type: 3}
       propertyPath: m_Size.z
-      value: 3.529549
+      value: 1.3677813
       objectReference: {fileID: 0}
     - target: {fileID: 3309065281350129712, guid: c130c6430b7d7b346afceb81da2519a9, type: 3}
       propertyPath: m_Center.x
-      value: -0.5884331
+      value: -0.6436824
       objectReference: {fileID: 0}
     - target: {fileID: 3309065281350129712, guid: c130c6430b7d7b346afceb81da2519a9, type: 3}
       propertyPath: m_Center.y
-      value: -4.2629304
+      value: -4.3759995
       objectReference: {fileID: 0}
     - target: {fileID: 3309065281350129712, guid: c130c6430b7d7b346afceb81da2519a9, type: 3}
       propertyPath: m_Center.z
-      value: -0.5805081
+      value: 0.05618884
       objectReference: {fileID: 0}
     - target: {fileID: 4439080600610169119, guid: c130c6430b7d7b346afceb81da2519a9, type: 3}
       propertyPath: score
