@@ -27,6 +27,9 @@ public class PlayerMove : MonoBehaviour
     private int slowDownCost = 10; // Initial cost for slowing down
     private int slowMotionCost = 20; // Initial cost for slow motion
 
+    public TMP_Text slowDownCostText; // Assign the UI Text element for "Speed Down" cost in the Inspector
+    public TMP_Text slowMotionCostText; // Assign the UI Text element for "Slow-Mo" cost in the Inspector
+
     void Start()
     {
         score.SetActive(true);
@@ -37,6 +40,7 @@ public class PlayerMove : MonoBehaviour
         jumpPower = 5;
         jumpDuration = 0.45f;
         Time.timeScale = 1;
+        UpdateCostDisplay();
     }
 
     // Update is called once per frame
@@ -79,6 +83,7 @@ public class PlayerMove : MonoBehaviour
                 CollectableControl.coinCount -= slowDownCost;
                 moveSpeed *= 0.9f; 
                 slowDownCost += 10; 
+                UpdateCostDisplay();
             }
         }
 
@@ -89,6 +94,7 @@ public class PlayerMove : MonoBehaviour
                 CollectableControl.coinCount -= slowMotionCost;
                 StartCoroutine(SlowMotionSequence());
                 slowMotionCost += 20; // Increase the cost for next usage
+                UpdateCostDisplay();
             }
         }
 
@@ -103,6 +109,11 @@ public class PlayerMove : MonoBehaviour
                 transform.Translate(Vector3.up * Time.deltaTime * -jumpPower, Space.World);
             }
         }
+    }
+
+    void UpdateCostDisplay(){   
+    slowDownCostText.text = "[X] Speed Down: " + slowDownCost;
+    slowMotionCostText.text = "[C] Slow-Mo: " + slowMotionCost;
     }
 
     IEnumerator JumpSequence()
