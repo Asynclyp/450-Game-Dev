@@ -20,9 +20,12 @@ public class PlayerMove : MonoBehaviour
     public bool comingDown;
     public static int jumpPower;
     public static float jumpDuration;
-    //Animator animator;
 
+    //Animator animator;
     private float speedIncreaseRate = 0.2f; // Adjust the rate of speed increase here
+
+    private int slowDownCost = 10; // Initial cost for slowing down
+    private int slowMotionCost = 20; // Initial cost for slow motion
 
     void Start()
     {
@@ -40,7 +43,6 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         moveSpeed += speedIncreaseRate * Time.deltaTime; // Increase moveSpeed over time
-        //Debug.Log("Move speed: " + moveSpeed);
 
         transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
 
@@ -51,6 +53,7 @@ public class PlayerMove : MonoBehaviour
                 transform.Translate(Vector3.left * Time.deltaTime * leftRightSpeed);
             }
         }
+
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             if (this.gameObject.transform.position.x < Boundary.rightSide)
@@ -63,10 +66,29 @@ public class PlayerMove : MonoBehaviour
         {
             if (!isJumping)
             {
-                isJumping = true;
+                isJumping = true;                
                 playerObject.GetComponent<Animator>().Play("Jump2");
-                //_animator.SetBool("Jump", true);
                 StartCoroutine(JumpSequence());
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            if (CollectableControl.coinCount >= slowDownCost)
+            {
+                CollectableControl.coinCount -= slowDownCost;
+                moveSpeed *= 0.9f; 
+                slowDownCost += 10; 
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            if (CollectableControl.coinCount >= slowMotionCost)
+            {
+                CollectableControl.coinCount -= slowMotionCost;
+                StartCoroutine(SlowMotionSequence());
+                slowMotionCost += 20; // Increase the cost for next usage
             }
         }
 
@@ -91,17 +113,21 @@ public class PlayerMove : MonoBehaviour
         isJumping = false;
         comingDown = false;
         playerObject.GetComponent<Animator>().Play("Standard Run");
-        //_animator.SetBool("Jump", false);
+    }
+
+    IEnumerator SlowMotionSequence()
+    {
+        Time.timeScale = 0.5f; 
+        yield return new WaitForSecondsRealtime(10f);
+        Time.timeScale = 1f; 
     }
 
     public void GameOver(int currScore)
     {
         finalScore.text = currScore.ToString();
-        Debug.Log("gameover called");
+        
         Time.timeScale = 0;
         score.SetActive(false);
         gameOverMenu.SetActive(true);
-
     }
-
 }
