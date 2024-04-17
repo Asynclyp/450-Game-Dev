@@ -7240,7 +7240,7 @@ PrefabInstance:
     - target: {fileID: 538835955860833336, guid: c130c6430b7d7b346afceb81da2519a9, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: bcb43877c515940f88a0fedfc8e1a157, type: 2}
+      objectReference: {fileID: 9100000, guid: 09ad152a57f0191408846ab4f65f85cc, type: 2}
     - target: {fileID: 1585057674101335893, guid: c130c6430b7d7b346afceb81da2519a9, type: 3}
       propertyPath: m_Name
       value: Sarah
@@ -7354,7 +7354,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5748213010681272264}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bcb43877c515940f88a0fedfc8e1a157, type: 2}
   m_CullingMode: 0
