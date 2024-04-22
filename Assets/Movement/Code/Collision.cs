@@ -38,10 +38,9 @@ public class Collision : MonoBehaviour
             {
                 CollectableControl.highestScore = CollectableControl.coinCount;
             }
-            Debug.Log(CollectableControl.coinCount);
+            
             mainScene.GameOver(CollectableControl.coinCount);
-            CollectableControl.coinCount = 0;
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //CollectableControl.coinCount = 0;
         }
 
     }

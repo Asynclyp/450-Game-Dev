@@ -33,6 +33,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         score.SetActive(true);
+        CollectableControl.coinCount = 0;
         moveSpeed = 10;
         leftRightSpeed = 10;
         isJumping = false;
