@@ -7372,6 +7372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Banana_Peel(1)
       objectReference: {fileID: 0}
+    - target: {fileID: 641612765030974109, guid: 511d93f0def2942dd86204bddd0795f8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2786523933346048756, guid: 511d93f0def2942dd86204bddd0795f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7416,6 +7420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level2
       objectReference: {fileID: 0}
+    - target: {fileID: 3847991979503074881, guid: 511d93f0def2942dd86204bddd0795f8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4439152940208252412, guid: 511d93f0def2942dd86204bddd0795f8, type: 3}
       propertyPath: m_Name
       value: Banana_Peel(3)
@@ -7423,6 +7431,14 @@ PrefabInstance:
     - target: {fileID: 5855758938221666452, guid: 511d93f0def2942dd86204bddd0795f8, type: 3}
       propertyPath: m_Name
       value: Banana_Peel(2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6466623705784924969, guid: 511d93f0def2942dd86204bddd0795f8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7665892311412541819, guid: 511d93f0def2942dd86204bddd0795f8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
